@@ -1,0 +1,108 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+/* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
+
+.SideMenu {
+  text-align: left;
+  position: absolute;
+  border-radius: 1.2rem;
+  background-color: #FF9F1C;
+  top: 10.9rem;
+  right: 1.8rem;
+  height: 81.6rem;
+  width: 43.4rem;
+}
+
+nav{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 5.9rem;
+  right: 3.6rem;
+  width: 39.9rem;
+}
+
+section{
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  height: 5rem;
+  width: 8.9rem;
+  background-color: #B1AEA5;
+}
+
+.Option1{
+  background-color: #FF9F1C;
+}
+
+.Option2{
+  background-color: #FFBF69;
+}
+
+.Option3{
+  background-color: #CBF3F0;
+}
+
+.Option4{
+  background-color: #2EC4B6;
+}
+
+.SideMenu-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3.5rem;
+  margin-right: 2rem;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: black;
+}
+
+.SideMenu-question {
+  display: flex;
+  align-content: center;
+  height: 5.1rem;
+  width: 5.1rem;
+  border-radius: 5.1rem;
+  background-color: #FFFFFF;
+}
+
+.SideMenu-question:hover {
+  background-color: #B1AEA5;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.question-image{
+  margin: 1.2rem;
+}
+
+.SideMenu-option{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.3rem;
+  margin-left: 3.5rem;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+
+.SideMenu-logo {
+  height: 7.8rem;
+  width: 7.8rem;
+  border-radius: 1.6rem;
+  background-color: #FFFFFF;
+}
+
+.SideMenu-logo:hover {
+  background-color: #C9C9C9;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
