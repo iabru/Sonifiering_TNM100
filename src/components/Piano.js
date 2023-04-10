@@ -11,8 +11,6 @@ class Piano extends React.Component {
         this.setState({
             keyPressed: keyNote
         });
-        /*var thenote=this.state.isClicked;
-        console.log(thenote);*/
     }
     render() {
         const keys = _.map(NOTES,(note,index) => {

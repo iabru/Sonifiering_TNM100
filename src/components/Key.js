@@ -1,5 +1,4 @@
 import React from "react";
-//import { useState } from 'react';
 import './Key.css';
 
 class Key extends React.Component {
@@ -48,10 +47,10 @@ class Key extends React.Component {
         let key;
         if(noteIsFlat)  {
             key = (
-            <div className={keyClassName} style={{backgroundColor: this.state.color[1]}} onClick={this.handleClick} clicked={this.state.isClicked}></div>);
+            <div className={keyClassName} style={{backgroundColor: this.state.color[1]}} onClick={this.handleClick}></div>);
         }
         else {
-            key = (<div className= {keyClassName} style = {{backgroundColor: this.state.color[0]}} onClick={this.handleClick} clicked={this.state.isClicked}>
+            key = (<div className= {keyClassName} style = {{backgroundColor: this.state.color[0]}} onClick={this.handleClick}>
                         <div className="key-text">
                             {this.props.note.toUpperCase()}
                         </div>
