@@ -64,7 +64,7 @@ const Graph = () => {
     return(  
         <div className="graph-wrapper">
         <ResponsiveContainer width="100%" height={window.innerHeight}>
-            <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 202 }} onClick={handleChartClick}>
+            <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }} onClick={handleChartClick}>
                 <XAxis hide="true" dataKey="name"/>
                 <YAxis orientation="right" />
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
