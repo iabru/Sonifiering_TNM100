@@ -1,7 +1,7 @@
 // How to start react: https://www.youtube.com/watch?v=Rs2BT6HrwMw
 import './SideMenu.css';
 
-function Val(name, link, setOption) {
+function Val(name, link) {
   return (
     <aside className="SideMenu-option">
       <img src={link} className="SideMenu-logo" alt={name} /> 

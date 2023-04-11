@@ -8,10 +8,16 @@ import Tab2 from './Tab2.js';
 import Tab3 from './Tab3.js';
 import Tab4 from './Tab4.js';
 
+// Local storage magi
+localStorage.setItem("tab1Option", JSON.stringify([0, 0]));
+localStorage.setItem("tab2Option", JSON.stringify([0, 0, 0]));
+localStorage.setItem("tab3Option", JSON.stringify([0, 0]));
+localStorage.setItem("tab4Option", JSON.stringify([0, 0]));
+
 
 // https://www.youtube.com/watch?v=eGaaw1Py2aY&t=335s
 
-function SideMenuOptions() {
+const SideMenuOptions = () => {
   const [active, setActive] = useState("Tab1");
 
   return (
