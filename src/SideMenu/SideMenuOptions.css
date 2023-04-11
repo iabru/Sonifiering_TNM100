@@ -1,0 +1,45 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+/* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
+
+nav{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 5.9rem;
+  right: 3.6rem;
+  width: 39.9rem;
+}
+
+section{
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  height: 5rem;
+  width: 8.9rem;
+  background-color: #B1AEA5;
+}
+
+.Option1{
+  background-color: #FF9F1C;
+}
+
+.Option2{
+  background-color: #FFBF69;
+}
+
+.Option3{
+  background-color: #CBF3F0;
+}
+
+.Option4{
+  background-color: #2EC4B6;
+}

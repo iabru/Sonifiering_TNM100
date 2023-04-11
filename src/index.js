@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import SideMenu from './SideMenu';
+import SideMenuOptions from './SideMenu/SideMenuOptions';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import History from './History/History.js'
+import Play from './Play.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
     <App />
-    <SideMenu />
+    <SideMenuOptions />
+    <History />
+    <Play />
+
   </React.StrictMode>
 );
 

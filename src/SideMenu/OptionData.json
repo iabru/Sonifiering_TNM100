@@ -1,0 +1,31 @@
+[
+        {
+            "title": ["Vågform", "Tonhöjd"],
+            "alt": [["Sinus", "Sågtand", "Triangel", "Fyrkant"],["Frekvens", "Toner"]],
+            "image": [["https://drive.google.com/uc?export=view&id=1u4OQRqRFBMwDeSjbQ_WVQx3EdUe3SYne", "https://drive.google.com/uc?export=view&id=1lsHS3RyO5adhJZMrVyX8FGQ2YDH4ZBEu", "https://drive.google.com/uc?export=view&id=1ePBCwYWrd8uAFZPmBY9CnneV8iwRh1Ta", "https://drive.google.com/uc?export=view&id=1v4-LrGh2EnZ7LhamopMAdJDgTdw94j65"],
+                      ["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"]],
+            "backgroundColor": "#FF9F1C"
+        },
+        {
+            "title": ["Harmoni", "Brus", "Filter"],
+            "alt": [["Harmoni", "Dur & Moll"], ["Vitt", "Rosa", "Knaster"], ["Lågpass", "Bandpass", "Högpass"]],
+            "image": [["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"], 
+                      ["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"], 
+                      ["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"]],
+            "backgroundColor": "#FFBF69"
+        },
+        {
+            "title": ["Klangfärg", "Ljudvolym"],
+            "alt": [["Vågform", "Pulsbredd", "Distortion"],["Ljudvolym", "Modulation", "Sustain"]],
+            "image": [["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"],
+                      ["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"]],
+            "backgroundColor": "#CBF3F0"
+        },
+        {
+            "title": ["Tidsaspekter", "Rumseffekter"],
+            "alt": [["Attack", "Release"],["Efterklang", "Eko"]],
+            "image": [["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"],
+                      ["https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-", "https://drive.google.com/uc?export=view&id=12AQIojrOjsR4tle6P903ctNvuKA2VZo-"]],
+            "backgroundColor": "#2EC4B6"
+        }
+]

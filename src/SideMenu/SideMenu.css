@@ -10,49 +10,52 @@
 */
 /* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
 
-.SideMenu {
+.Tab1{
   text-align: left;
   position: absolute;
   border-radius: 1.2rem;
-  background-color: #FF9F1C;
   top: 10.9rem;
   right: 1.8rem;
   height: 81.6rem;
   width: 43.4rem;
-}
-
-nav{
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  top: 5.9rem;
-  right: 3.6rem;
-  width: 39.9rem;
-}
-
-section{
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem;
-  height: 5rem;
-  width: 8.9rem;
-  background-color: #B1AEA5;
-}
-
-.Option1{
   background-color: #FF9F1C;
+  overflow-y: auto;
 }
 
-.Option2{
+.Tab2{
+  text-align: left;
+  position: absolute;
+  border-radius: 1.2rem;
+  top: 10.9rem;
+  right: 1.8rem;
+  height: 81.6rem;
+  width: 43.4rem;
   background-color: #FFBF69;
+  overflow-y: auto;
 }
 
-.Option3{
+.Tab3{
+  text-align: left;
+  position: absolute;
+  border-radius: 1.2rem;
+  top: 10.9rem;
+  right: 1.8rem;
+  height: 81.6rem;
+  width: 43.4rem;
   background-color: #CBF3F0;
+  overflow-y: auto;
 }
 
-.Option4{
+.Tab4{
+  text-align: left;
+  position: absolute;
+  border-radius: 1.2rem;
+  top: 10.9rem;
+  right: 1.8rem;
+  height: 81.6rem;
+  width: 43.4rem;
   background-color: #2EC4B6;
+  overflow-y: auto;
 }
 
 .SideMenu-header {
@@ -95,11 +98,39 @@ section{
   font-size: 3.2rem;
 }
 
+.SideMenu-option-chosen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.3rem;
+  margin-left: 3.5rem;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+
+.Icon-cross {
+  height: 2.8rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: 2.8rem;
+  position: absolute;
+  margin-left: 6.35rem;
+  margin-bottom: 6.35rem;
+}
+
 .SideMenu-logo {
-  height: 7.8rem;
-  width: 7.8rem;
+  height: 5rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: 5rem;
+  padding: 1.4rem;
   border-radius: 1.6rem;
   background-color: #FFFFFF;
+}
+
+.SideMenu-logo-chosen {
+  height: 5rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: 5rem;
+  padding: 1.4rem;
+  border-radius: 1.6rem;
+  background-color: #B1AEA5;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .SideMenu-logo:hover {

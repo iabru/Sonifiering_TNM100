@@ -1,0 +1,25 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+/* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
+
+.History-box{
+  position: absolute;
+  top: 94.2rem;
+  right: 15.9rem;
+  width: 293px;
+  height: 121px;
+  background: #B1AEA5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  overflow-x: auto;
+}

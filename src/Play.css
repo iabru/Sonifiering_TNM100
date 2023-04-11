@@ -1,0 +1,24 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+/* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
+
+.playButton {
+  position: absolute;
+  right: 1.8rem;
+  top: 94.2rem;
+  height: 12.1rem;
+  width: 12.1rem;
+  border-radius: 6.05rem;
+}
+
+.playButton:hover {
+  filter: brightness(75%);
+}

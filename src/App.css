@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%; /* Used for easier figma conversion (the pixel values in figma =  */
+  font-size: 62.5%; /* Used for easier figma conversion (ex: 14 pixlar i figma är 1.4rem här) */
   font-family: 'Inter';
   background-color: #595751;
 }

@@ -1,0 +1,43 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+/* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
+
+.Icon-cross {
+  position: absolute;
+  height: 2.8rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: 2.8rem;
+  background: #FFFFFF;
+  border: 1px solid #A4A198;
+  border-radius: 1.4rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 6.35rem;
+  margin-top: -1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Icon-cross:hover {
+  background-color: #C9C9C9;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Icon-logo {
+  height: 5rem;
+  width: 5rem;
+  padding: 1.4rem;
+  border-radius: 1.6rem;
+  background-color: #FFFFFF;
+}
+
+.chosenOption{
+  margin-left: 1.4rem;
+}
