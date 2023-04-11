@@ -22,15 +22,15 @@ class Piano extends React.Component {
             );
         });
         return(
-            <div>
-                <h1> 
+            <>
+                {/* <h1> 
                     {this.state.keyPressed.toUpperCase()}
-                </h1>
+                </h1> */}
             <div className="piano">
                 
                {keys}
             </div>
-            </div>
+            </>
         );
 
     }
