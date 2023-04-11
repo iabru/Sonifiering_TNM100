@@ -1,3 +1,4 @@
+
 import React from 'react';
 import _ from 'lodash';
 import {Key} from './Key.js';
@@ -6,11 +7,10 @@ import {NOTES} from './constants';
 
 class Piano extends React.Component {
     state = {keyPressed: 'No note played yet'}
-    
-    handleChildVar = (keyNote, clicked) => {
-        this.setState({
-            keyPressed: keyNote
-        });
+    handleChildVar = (keyNote) => {
+        this.setState({keyPressed: keyNote});
+        var thenote=this.state.keyPressed;
+        console.log({thenote});
     }
     render() {
         const keys = _.map(NOTES,(note,index) => {
@@ -22,19 +22,16 @@ class Piano extends React.Component {
                 />
             );
         });
-        
         return(
-            <div>
-                <h1> 
+            <>
+                {/* <h1> 
                     {this.state.keyPressed.toUpperCase()}
-                </h1>
-                <h2>
-                   {}
-                </h2>
+                </h1> */}
             <div className="piano">
+                
                {keys}
             </div>
-            </div>
+            </>
         );
 
     }
