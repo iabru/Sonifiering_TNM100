@@ -1,8 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
 import {Key} from './Key.js';
+import Graph from '../graph/Graph';
 import './Piano.css';
-import {NOTES} from './constants';
+import {NOTES} from './notes.js';
 
 class Piano extends React.Component {
     state = {keyPressed: 'No note played yet'}
@@ -11,6 +12,7 @@ class Piano extends React.Component {
         this.setState({
             keyPressed: keyNote
         });
+        console.log(keyNote);
         /*var thenote=this.state.isClicked;
         console.log(thenote);*/
     }
@@ -24,18 +26,12 @@ class Piano extends React.Component {
                 />
             );
         });
-        
+        <Graph>
+            keyNote={this.handleChildVar}
+        </Graph>
         return(
-            <div>
-                <h1> 
-                    {this.state.keyPressed.toUpperCase()}
-                </h1>
-                <h2>
-                   {}
-                </h2>
             <div className="piano">
                {keys}
-            </div>
             </div>
         );
 

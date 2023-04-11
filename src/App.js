@@ -1,4 +1,3 @@
-//import logo from './logo.svg';
 import './App.css';
 import { Piano } from './components/piano/Piano.js'
 import Graph from './components/graph/Graph.js'

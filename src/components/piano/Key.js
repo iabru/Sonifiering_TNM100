@@ -34,7 +34,6 @@ class Key extends React.Component {
                     this.setState({color: ['white', this.state.color[1]]})
             }
         }
-        this.forceUpdate();
     }
     render() {
         
