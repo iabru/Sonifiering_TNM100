@@ -37,8 +37,5 @@ const SideMenuOptions = () => {
     </div>
   );
 }
-/*      {active === "Tab1" && <SideMenu data={Data} optionIndex={0}/>}
-        {active === "2" && <SideMenu data={Data} optionIndex={1}/>}
-        {active === "3" && <SideMenu data={Data} optionIndex={2}/>}
-        {active === "4" && <SideMenu data={Data} optionIndex={3}/>} */
+
 export default SideMenuOptions;
