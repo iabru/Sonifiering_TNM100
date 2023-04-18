@@ -1,5 +1,5 @@
 // How to start react: https://www.youtube.com/watch?v=Rs2BT6HrwMw
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Rubrik from './Rubrik.js'
 import Val from './Val.js'
 import Valt from './Valt.js'
@@ -12,6 +12,20 @@ const Tab2 = () =>{
   const [option, setOption] = useState(options[0]);
   const [option2, setOption2] = useState(options[1]);
   const [option3, setOption3] = useState(options[2]);
+
+  // Update options when local storage updates
+  useEffect(() => {
+    const handleStorage = () => {
+        // Update options when local storage updates
+        var data = JSON.parse(localStorage.getItem("tab2Option"));
+        setOption(data[0]);
+        setOption2(data[1]);
+        setOption3(data[3]);
+      }
+    
+      window.addEventListener('storage', handleStorage())
+      return () => window.removeEventListener('storage', handleStorage())
+    }, [option, option2, option3])
 
   return (
     <div>
