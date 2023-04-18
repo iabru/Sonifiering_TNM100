@@ -13,6 +13,7 @@ const Tab1 = () =>{
   const [option, setOption] = useState(options[0]);
   const [option2, setOption2] = useState(options[1]);
 
+  // Update options when local storage updates
   useEffect(() => {
     const handleStorage = () => {
         // Update options when local storage updates
