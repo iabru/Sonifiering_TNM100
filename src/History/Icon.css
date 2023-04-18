@@ -35,7 +35,22 @@
   width: 5rem;
   padding: 1.4rem;
   border-radius: 1.6rem;
-  background-color: #FFFFFF;
+}
+
+#Option1{
+  background-color: #FF9F1C;
+}
+
+#Option2{
+  background-color: #FFBF69;
+}
+
+#Option3{
+  background-color: #CBF3F0;
+}
+
+#Option4{
+  background-color: #2EC4B6;
 }
 
 .chosenOption{
