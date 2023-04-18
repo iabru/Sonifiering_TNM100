@@ -10,6 +10,31 @@
 */
 /* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
 
+/* width */
+::-webkit-scrollbar {
+  width: 1.5rem;
+  height: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 1.25rem;
+  margin: 1.7rem;
+  background: rgba(0, 0, 0, 0.25); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.6); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 1); 
+}
+
 .Tab1{
   text-align: left;
   position: absolute;

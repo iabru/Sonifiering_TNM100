@@ -6,16 +6,16 @@ import Valt from './Valt.js'
 import Data from './OptionData.json';
 import './SideMenu.css';
 
+const options = JSON.parse(localStorage.getItem("tab3Option")) || [];
 
 const Tab3 = () =>{
-  const options = JSON.parse(localStorage.getItem("tab3Option"));
   const [option, setOption] = useState(options[0]);
   const [option2, setOption2] = useState(options[1]);
 
   return (
     <div>
         <article className="Tab3">
-          {Rubrik(Data[2].title[0])}
+          {Rubrik(Data[2].title[0], "Lorem ipsum 6")}
 
           {option === 0 && Valt(Data[2].alt[0][0], Data[2].image[0][0])}
           <div onClick={() => {setOption(0); options[0] = 0; localStorage.setItem("tab3Option", JSON.stringify(options));}}>{option !== 0 && Val(Data[2].alt[0][0], Data[2].image[0][0])}</div>
@@ -26,7 +26,7 @@ const Tab3 = () =>{
           {option === 2 && Valt(Data[2].alt[0][2], Data[2].image[0][2])}
           <div onClick={() => {setOption(2); options[0] = 2; localStorage.setItem("tab3Option", JSON.stringify(options));}}>{option !== 2 && Val(Data[2].alt[0][2], Data[2].image[0][2])}</div>
 
-          {Rubrik(Data[2].title[1])}
+          {Rubrik(Data[2].title[1], "Lorem ipsum 7")}
 
           {option2 === 0 && Valt(Data[2].alt[1][0], Data[2].image[1][0])}
           <div onClick={() => {setOption2(0); options[1] = 0; localStorage.setItem("tab3Option", JSON.stringify(options));}}>{option2 !== 0 && Val(Data[2].alt[1][0], Data[2].image[1][0])}</div>

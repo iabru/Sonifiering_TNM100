@@ -15,7 +15,6 @@ root.render(
     <SideMenuOptions />
     <History />
     <Play />
-
   </React.StrictMode>
 );
 

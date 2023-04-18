@@ -21,3 +21,22 @@
     background: rgba(0, 0, 0, 0.67);
     box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.5rem 1.5rem;
 }
+
+.cross {
+    height: 5.1rem;
+    width: 5.1rem;
+    background: #FFFFFF;
+    border: 1px solid #A4A198;
+    border-radius: 2.55rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 150.7rem;
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cross:hover {
+    background-color: #C9C9C9;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
