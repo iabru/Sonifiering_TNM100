@@ -12,11 +12,10 @@ const Tab1 = () =>{
   //const options = JSON.parse(localStorage.getItem("tab1Option")) || [];
   const [option, setOption] = useState(options[0]);
   const [option2, setOption2] = useState(options[1]);
-
-  // Update options when local storage updates
+  
+  // It should update when history does but for some reason it doesn't
   useEffect(() => {
     const handleStorage = () => {
-        // Update options when local storage updates
         var data = JSON.parse(localStorage.getItem("tab1Option"));
         setOption(data[0]);
         setOption2(data[1]);
@@ -25,7 +24,7 @@ const Tab1 = () =>{
       window.addEventListener('storage', handleStorage())
       return () => window.removeEventListener('storage', handleStorage())
     }, [option, option2])
-    
+
   return (
     <div>
         <article className="Tab1">

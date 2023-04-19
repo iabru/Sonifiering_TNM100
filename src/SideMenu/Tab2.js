@@ -16,11 +16,10 @@ const Tab2 = () =>{
   // Update options when local storage updates
   useEffect(() => {
     const handleStorage = () => {
-        // Update options when local storage updates
         var data = JSON.parse(localStorage.getItem("tab2Option"));
         setOption(data[0]);
         setOption2(data[1]);
-        setOption3(data[3]);
+        setOption3(data[2]);
       }
     
       window.addEventListener('storage', handleStorage())
