@@ -13,26 +13,26 @@
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: calc(1.2vh * 1000 / 1080);
+  height: calc(1.2vh * 1000 / 1080);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 1.25rem;
-  margin: 1.7rem !important;
+  border-radius: calc(1.25vh * 1000 / 1080);
+  margin: calc(1.7vh * 1000 / 1080) !important;
   background: rgba(0, 0, 0, 0.25); 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: 1.25rem;
+  border-radius: calc(1.25vh * 1000 / 1080);
   background: rgba(255, 255, 255, 0.6); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  border-radius: 1.25rem;
+  border-radius: calc(1.25vh * 1000 / 1080);
   background: rgba(255, 255, 255, 1); 
 }
 /***************************************************************************/
@@ -40,11 +40,11 @@
 .Tab1{
   text-align: left;
   position: absolute;
-  border-radius: 1.2rem;
-  top: 10.9rem;
-  right: 1.8rem;
-  height: 81.6rem;
-  width: 43.4rem;
+  border-radius: calc(1.2vh * 1000 / 1080);
+  top: calc(10.9vh * 1000 / 1080);
+  right: calc(1.8vh * 1000 / 1080);
+  height: calc(81.6vh * 1000 / 1080);
+  width: calc(43.4vh * 1000 / 1080);
   background-color: #FF9F1C;
   overflow-y: auto;
 }
@@ -52,11 +52,11 @@
 .Tab2{
   text-align: left;
   position: absolute;
-  border-radius: 1.2rem;
-  top: 10.9rem;
-  right: 1.8rem;
-  height: 81.6rem;
-  width: 43.4rem;
+  border-radius: calc(1.2vh * 1000 / 1080);
+  top: calc(10.9vh * 1000 / 1080);
+  right: calc(1.8vh * 1000 / 1080);
+  height: calc(81.6vh * 1000 / 1080);
+  width: calc(43.4vh * 1000 / 1080);
   background-color: #FFBF69;
   overflow-y: auto;
 }
@@ -64,11 +64,11 @@
 .Tab3{
   text-align: left;
   position: absolute;
-  border-radius: 1.2rem;
-  top: 10.9rem;
-  right: 1.8rem;
-  height: 81.6rem;
-  width: 43.4rem;
+  border-radius: calc(1.2vh * 1000 / 1080);
+  top: calc(10.9vh * 1000 / 1080);
+  right: calc(1.8vh * 1000 / 1080);
+  height: calc(81.6vh * 1000 / 1080);
+  width: calc(43.4vh * 1000 / 1080);
   background-color: #CBF3F0;
   overflow-y: auto;
 }
@@ -76,11 +76,11 @@
 .Tab4{
   text-align: left;
   position: absolute;
-  border-radius: 1.2rem;
-  top: 10.9rem;
-  right: 1.8rem;
-  height: 81.6rem;
-  width: 43.4rem;
+  border-radius: calc(1.2vh * 1000 / 1080);
+  top: calc(10.9vh * 1000 / 1080);
+  right: calc(1.8vh * 1000 / 1080);
+  height: calc(81.6vh * 1000 / 1080);
+  width: calc(43.4vh * 1000 / 1080);
   background-color: #2EC4B6;
   overflow-y: auto;
 }
@@ -90,9 +90,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 3.5rem;
-  margin-right: 2rem;
-  font-size: 3.6rem;
+  margin-left: calc(3.5vh * 1000 / 1080);
+  margin-right: calc(2vh * 1000 / 1080);
+  font-size: calc(3.6vh * 1000 / 1080);
   font-weight: 700;
   color: black;
 }
@@ -100,9 +100,9 @@
 .SideMenu-question {
   display: flex;
   align-content: center;
-  height: 5.1rem;
-  width: 5.1rem;
-  border-radius: 5.1rem;
+  height: calc(5.1vh * 1000 / 1080);
+  width: calc(5.1vh * 1000 / 1080);
+  border-radius: calc(5.1vh * 1000 / 1080);
   background-color: #FFFFFF;
 }
 
@@ -112,50 +112,50 @@
 }
 
 .question-image{
-  margin: 1.2rem;
+  margin: calc(1.2vh * 1000 / 1080);
 }
 
 .SideMenu-option{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.3rem;
-  margin-left: 3.5rem;
+  gap: calc(1.3vh * 1000 / 1080);
+  margin-left: calc(3.5vh * 1000 / 1080);
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: calc(3.2vh * 1000 / 1080);
 }
 
 .SideMenu-option-chosen{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.3rem;
-  margin-left: 3.5rem;
+  gap: calc(1.3vh * 1000 / 1080);
+  margin-left: calc(3.5vh * 1000 / 1080);
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: calc(3.2vh * 1000 / 1080);
 }
 
 .Icon-cross {
-  height: 2.8rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
-  width: 2.8rem;
+  height: calc(2.8vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: calc(2.8vh * 1000 / 1080);
   position: absolute;
-  margin-left: 6.35rem;
-  margin-bottom: 6.35rem;
+  margin-left: calc(6.35vh * 1000 / 1080);
+  margin-bottom: calc(6.35vh * 1000 / 1080);
 }
 
 .SideMenu-logo {
-  height: 5rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
-  width: 5rem;
-  padding: 1.4rem;
-  border-radius: 1.6rem;
+  height: calc(5vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: calc(5vh * 1000 / 1080);
+  padding: calc(1.4vh * 1000 / 1080);
+  border-radius: calc(1.6vh * 1000 / 1080);
   background-color: #FFFFFF;
 }
 
 .SideMenu-logo-chosen {
-  height: 5rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
-  width: 5rem;
-  padding: 1.4rem;
-  border-radius: 1.6rem;
+  height: calc(5vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: calc(5vh * 1000 / 1080);
+  padding: calc(1.4vh * 1000 / 1080);
+  border-radius: calc(1.6vh * 1000 / 1080);
   background-color: #B1AEA5;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

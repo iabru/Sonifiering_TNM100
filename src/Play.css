@@ -12,11 +12,11 @@
 
 .playButton {
   position: absolute;
-  right: 1.8rem;
-  top: 94.2rem;
-  height: 12.1rem;
-  width: 12.1rem;
-  border-radius: 6.05rem;
+  right: calc(1.8vh * 1000 / 1080);
+  top: calc(94.2vh * 1000 / 1080);
+  height: calc(12.1vh * 1000 / 1080);
+  width: calc(12.1vh * 1000 / 1080);
+  border-radius: calc(6.05vh * 1000 / 1080);
 }
 
 .playButton:hover {

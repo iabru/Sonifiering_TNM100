@@ -12,14 +12,14 @@
 
 .History-box{
   position: absolute;
-  top: 94.2rem;
-  right: 15.9rem;
-  width: 293px;
-  height: 121px;
+  top: calc(94.2vh * 1000 / 1080);
+  right: calc(15.9vh * 1000 / 1080);
+  width: calc(29.3vh * 1000 / 1080);
+  height: calc(12.1vh * 1000 / 1080);
   background: #B1AEA5;
-  border-radius: 12px;
+  border-radius: calc(1.2vh * 1000 / 1080);
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: calc(0.9vh * 1000 / 1080);
   overflow-x: auto;
 }

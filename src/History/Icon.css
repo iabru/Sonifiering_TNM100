@@ -12,14 +12,14 @@
 
 .Icon-cross {
   position: absolute;
-  height: 2.8rem; /* 7.8(org) - 1.4(padding) * 2 = 5 */
-  width: 2.8rem;
+  height: calc(2.8vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  width: calc(2.8vh * 1000 / 1080);
   background: #FFFFFF;
   border: 1px solid #A4A198;
-  border-radius: 1.4rem;
+  border-radius: calc(1.4vh * 1000 / 1080);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 6.35rem;
-  margin-top: -1.3rem;
+  margin-left: calc(6.35vh * 1000 / 1080);
+  margin-top: calc(-1.3vh * 1000 / 1080);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,10 +31,10 @@
 }
 
 .Icon-logo {
-  height: 5rem;
-  width: 5rem;
-  padding: 1.4rem;
-  border-radius: 1.6rem;
+  height: calc(5vh * 1000 / 1080);
+  width: calc(5vh * 1000 / 1080);
+  padding: calc(1.4vh * 1000 / 1080);
+  border-radius: calc(1.6vh * 1000 / 1080);
 }
 
 #Option1{
@@ -54,5 +54,5 @@
 }
 
 .chosenOption{
-  margin-left: 1.4rem;
+  margin-left: calc(1.4vh * 1000 / 1080);
 }

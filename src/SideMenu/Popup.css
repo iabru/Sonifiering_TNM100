@@ -6,31 +6,31 @@
     bottom: 0;
     display: flex;
     justify-content: center;
-    margin-top: 8rem;
+    margin-top: calc(8vh * 1000 / 1080);
 }
 
 .popup-body {
     position: absolute;
-    height: 92rem;
-    width: 158rem;
+    height: calc(92vh * 1000 / 1080);
+    width: calc(158vh * 1000 / 1080);
     text-align: center;
     color: white;
     margin: auto;
-    border-radius: 1.3rem;
+    border-radius: calc(1.3vh * 1000 / 1080);
     border-color: black;
     background: rgba(0, 0, 0, 0.67);
-    box-shadow: rgba(0, 0, 0, 0.35) 0rem 0.5rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) calc(0vh * 1000 / 1080) calc(0.5vh * 1000 / 1080) calc(1.5vh * 1000 / 1080);
 }
 
 .cross {
-    height: 5.1rem;
-    width: 5.1rem;
+    height: calc(5.1vh * 1000 / 1080);
+    width: calc(5.1vh * 1000 / 1080);
     background: #FFFFFF;
     border: 1px solid #A4A198;
-    border-radius: 2.55rem;
+    border-radius: calc(2.55vh * 1000 / 1080);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 150.7rem;
-    margin-top: 2.2rem;
+    margin-left: calc(150.7vh * 1000 / 1080);
+    margin-top: calc(2.2vh * 1000 / 1080);
     display: flex;
     justify-content: center;
     align-items: center;

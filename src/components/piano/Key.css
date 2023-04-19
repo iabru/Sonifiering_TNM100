@@ -1,0 +1,23 @@
+.key {
+    background-color: white;
+    height:4.5%;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+.key.flat {
+    background-color: #2EC4B6;
+    margin-top: -4%;
+    margin-bottom: -4%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    height: 4%;
+    width: 50%;
+}
+.key-text {
+    color: black;
+    font-weight: 600;
+    font-size:20px;
+    margin-left:70%;
+    pointer-events: none;
+}

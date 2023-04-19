@@ -15,16 +15,16 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  top: 5.9rem;
-  right: 3.6rem;
-  width: 39.9rem;
+  top: calc(5.9vh * 1000 / 1080);
+  right: calc(3.6vh * 1000 / 1080);
+  width: calc(39.9vh * 1000 / 1080);
 }
 
 section{
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem;
-  height: 5rem;
-  width: 8.9rem;
+  border-top-left-radius: calc(1.2vh * 1000 / 1080);
+  border-top-right-radius: calc(1.2vh * 1000 / 1080);
+  height: calc(5vh * 1000 / 1080);
+  width: calc(8.9vh * 1000 / 1080);
   background-color: #B1AEA5;
 }
 
