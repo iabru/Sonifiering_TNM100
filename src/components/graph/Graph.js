@@ -66,7 +66,7 @@ const renderTooltip = (event, { active, payload }) => {
     console.log(data[1]);
     return(  
         <div className="graph-wrapper">
-        <ResponsiveContainer width="100%" height={window.innerHeight}>
+        <ResponsiveContainer>
             <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }} onClick={handleChartClick}>
                 <XAxis hide="true" dataKey="name"/>
                 <YAxis orientation="right" />

@@ -20,10 +20,19 @@ function History() {
   // Update options when local storage updates
   useEffect(() => {
     const handleStorage = () => {
-      setOptions1(JSON.parse(localStorage.getItem("tab1Option")));
-      setOptions2(JSON.parse(localStorage.getItem("tab2Option")));
-      setOptions3(JSON.parse(localStorage.getItem("tab3Option")));
-      setOptions4(JSON.parse(localStorage.getItem("tab4Option")));
+      if(options1 !== JSON.parse(localStorage.getItem("tab1Option"))){
+        setOptions1(JSON.parse(localStorage.getItem("tab1Option")));
+      }
+      if(options2 !== JSON.parse(localStorage.getItem("tab2Option"))){
+        setOptions2(JSON.parse(localStorage.getItem("tab2Option")));
+      }
+      if(options3 !== JSON.parse(localStorage.getItem("tab3Option"))){
+        setOptions3(JSON.parse(localStorage.getItem("tab3Option")));
+      }
+      if(options4 !== JSON.parse(localStorage.getItem("tab4Option"))){
+        setOptions4(JSON.parse(localStorage.getItem("tab4Option")));
+      }
+      
     }
   
     window.addEventListener('storage', handleStorage())

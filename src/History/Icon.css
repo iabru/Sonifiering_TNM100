@@ -12,7 +12,7 @@
 
 .Icon-cross {
   position: absolute;
-  height: calc(2.8vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
+  height: calc(2.8vh * 1000 / 1080);
   width: calc(2.8vh * 1000 / 1080);
   background: #FFFFFF;
   border: 1px solid #A4A198;
@@ -21,8 +21,12 @@
   margin-left: calc(6.35vh * 1000 / 1080);
   margin-top: calc(-1.3vh * 1000 / 1080);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+.cross-image{
+  margin: calc(0.6vh * 1000 / 1080);
 }
 
 .Icon-cross:hover {

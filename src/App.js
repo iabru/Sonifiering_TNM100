@@ -5,10 +5,10 @@ import Graph from './components/graph/Graph.js'
 function App() {
   return (
     <div className="App">
-      <header className="Content">
+      <div className="Content">
         <Piano />
         <Graph/>
-      </header>
+      </div>
     </div>
   );
 }
