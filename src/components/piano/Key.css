@@ -1,19 +1,19 @@
 .key {
     background-color: white;
-    height: calc(100% / 21); /* 21 keys */
+    height: calc((983vh * 100 / 1080)/21); /* 21 keys, 1004-21 (för border) */
     width: 100%;
-    border-width: 0px 1px 1px 0px;
+    border-width: 0vh 0.1vh 0.1vh 0vh; 
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5); 
     border-radius: 0px 6px 6px 0px;
 }
 
 .key.flat {
     background-color: #2EC4B6;
     z-index: 1;
+    margin-top: calc((-983vh * 100 / 1080)/72); /*totalt 36 tangenter, halvtangenter ska ligga på mitten */
     position: absolute;
     border-width: 0px;
-    margin-top: calc(-100% / 42);
     border-radius: 0px 6px 6px 0px;
     height: 3%;
     width: 57.7%;
