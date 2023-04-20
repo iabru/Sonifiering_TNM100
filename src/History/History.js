@@ -10,34 +10,26 @@ const localOptions2 = JSON.parse(localStorage.getItem("tab2Option")) || [];
 const localOptions3 = JSON.parse(localStorage.getItem("tab3Option")) || [];
 const localOptions4 = JSON.parse(localStorage.getItem("tab4Option")) || [];
 
-function History() {
+function History({parentToChild}) {
   // Get current options from the local storage for each tab
-  const [options1, setOptions1] = useState(localOptions1);
-  const [options2, setOptions2] = useState(localOptions2);
-  const [options3, setOptions3] = useState(localOptions3);
-  const [options4, setOptions4] = useState(localOptions4);
+  const [options1, setOptions1] = useState([]);
+  const [options2, setOptions2] = useState([]);
+  const [options3, setOptions3] = useState([]);
+  const [options4, setOptions4] = useState([]);
 
+ // console.log("history", parentToChild);
   // Update options when local storage updates
   useEffect(() => {
     const handleStorage = () => {
-      if(options1 !== JSON.parse(localStorage.getItem("tab1Option"))){
-        setOptions1(JSON.parse(localStorage.getItem("tab1Option")));
-      }
-      if(options2 !== JSON.parse(localStorage.getItem("tab2Option"))){
+        setOptions1(JSON.parse(localStorage.getItem("tab1Option")));   
         setOptions2(JSON.parse(localStorage.getItem("tab2Option")));
-      }
-      if(options3 !== JSON.parse(localStorage.getItem("tab3Option"))){
         setOptions3(JSON.parse(localStorage.getItem("tab3Option")));
-      }
-      if(options4 !== JSON.parse(localStorage.getItem("tab4Option"))){
         setOptions4(JSON.parse(localStorage.getItem("tab4Option")));
-      }
-      
     }
   
     window.addEventListener('storage', handleStorage())
     return () => window.removeEventListener('storage', handleStorage())
-  }, [options1, options2, options3, options4]) // mata in options
+  }, [parentToChild]) // mata in options
 
   // I AM SO SORRY FOR THIS MONSTER
   const removeIcon = () => {

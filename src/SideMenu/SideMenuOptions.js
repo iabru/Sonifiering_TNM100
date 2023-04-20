@@ -17,8 +17,13 @@ localStorage.setItem("tab4Option", JSON.stringify([0, 0]));
 
 // https://www.youtube.com/watch?v=eGaaw1Py2aY&t=335s
 
-const SideMenuOptions = () => {
+const SideMenuOptions = ({anotherChildToParent}) => {
   const [active, setActive] = useState("Tab1");
+  const [updateHistory, setUpdateHistory] = useState(false);
+
+  const childToParent = (childData) => {
+    anotherChildToParent(childData);
+  }
 
   return (
     <div>
@@ -29,10 +34,10 @@ const SideMenuOptions = () => {
         <section className="Option4" onClick={() => setActive("Tab4")} />
       </nav>
       <div>
-        {active === "Tab1" && <Tab1 />}
-        {active === "Tab2" && <Tab2 />}
-        {active === "Tab3" && <Tab3 />}
-        {active === "Tab4" && <Tab4 />}
+        {active === "Tab1" && <Tab1 childToParent={childToParent}/>}
+        {active === "Tab2" && <Tab2 childToParent={childToParent}/>}
+        {active === "Tab3" && <Tab3 childToParent={childToParent}/>}
+        {active === "Tab4" && <Tab4 childToParent={childToParent}/>}
       </div>
     </div>
   );

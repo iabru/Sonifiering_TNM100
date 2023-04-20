@@ -4,4 +4,5 @@
     min-width: 0;
     border-radius: calc(12vh * 10 / 108);
     background-color: white;
+    user-select: none;
 }
