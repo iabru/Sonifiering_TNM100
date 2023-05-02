@@ -1,7 +1,9 @@
 .piano {
     width: calc(220vh * 100 / 1080);
-    height: calc(1004vh * 100 / 1080) !important;
     border-radius: calc(12vh * 10 / 108);
+    flex-direction: column-reverse !important;
+    align-items: center;
+    justify-content: 1;
     position: relative;
     filter: drop-shadow(8px 0px 4px rgba(0, 0, 0, 0.25));
 }
