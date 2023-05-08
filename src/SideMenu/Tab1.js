@@ -15,7 +15,7 @@ const Tab1 = ({history, updateHistory}) =>{
   return (
     <div>
         <article className="Tab1">
-          {Rubrik(Data[0].title[0], "Lorem ipsum")}
+          {Rubrik(Data[0].title[0], "Med vågform avses den grafiska formen hos en periodisk, med jämna mellanrum lika återkommande, förändring i ett fysiskt medium.")}
 
           {option[0] === 0 && Valt(Data[0].alt[0][0], Data[0].image[0][0])}
           <div onClick={() => { 
@@ -57,7 +57,7 @@ const Tab1 = ({history, updateHistory}) =>{
             {option[0] !== 3 && Val(Data[0].alt[0][3], Data[0].image[0][3])}
           </div>
 
-          {Rubrik(Data[0].title[1], "Lorem ipsum 2")}
+          {Rubrik(Data[0].title[1], `Frekvens: Varje datavärde är direkt mappat till en frekvens \nToner: Varje datavärde har interpolerats till närmaste ton`)}
 
           {option[1] === 0 && Valt(Data[0].alt[1][0], Data[0].image[1][0])}
           <div onClick={() => { 

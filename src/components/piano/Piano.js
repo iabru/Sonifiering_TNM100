@@ -13,22 +13,31 @@ class Piano extends React.Component {
             keyPressed: keyNote
         });
         console.log(keyNote);
+
+        //Send the clicked keys to App.js
+        let tempList = this.props.keysPressed ? [...this.props.keysPressed] : [];
+        tempList.includes(keyNote) ? tempList.splice(tempList.indexOf(keyNote),1) : tempList.push(keyNote);
+        this.props.updateKeysPressed(tempList);
         /*var thenote=this.state.isClicked;
         console.log(thenote);*/
     }
     render() {
         const keys = _.map(NOTES,(note,index) => {
+            let tempList = this.props.keysPressed ? [...this.props.keysPressed] : [];
+            let boleanTemp = false;
+            tempList.includes(note) ? boleanTemp=true : boleanTemp=false;
             return (
                 <Key
                     key={index}
                     note={note}
                     keyNote={this.handleChildVar}
+                    keyPressed={boleanTemp}
                 />
             );
         });
-        <Graph>
-            keyNote={this.handleChildVar}
-        </Graph>
+        // <Graph>
+        //     keyNote={this.handleChildVar}
+        // </Graph>
         return(
             <div className="piano">
                {keys}
