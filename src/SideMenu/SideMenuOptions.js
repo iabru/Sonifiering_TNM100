@@ -9,22 +9,18 @@ import Tab3 from './Tab3.js';
 import Tab4 from './Tab4.js';
 
 // Local storage magi
-localStorage.setItem("tab1Option", JSON.stringify([0, 0]));
-localStorage.setItem("tab2Option", JSON.stringify([0, 0, 0]));
-localStorage.setItem("tab3Option", JSON.stringify([0, 0]));
-localStorage.setItem("tab4Option", JSON.stringify([0, 0]));
+// localStorage.setItem("tab1Option", JSON.stringify([0, 0]));
+// localStorage.setItem("tab2Option", JSON.stringify([0, 0, 0]));
+// localStorage.setItem("tab3Option", JSON.stringify([0, 0]));
+// localStorage.setItem("tab4Option", JSON.stringify([0, 0]));
 
 
 // https://www.youtube.com/watch?v=eGaaw1Py2aY&t=335s
 
-const SideMenuOptions = ({anotherChildToParent}) => {
+const SideMenuOptions = ({history, updateHistory}) => {
   const [active, setActive] = useState("Tab1");
-  const [updateHistory, setUpdateHistory] = useState(false);
-
-  const childToParent = (childData) => {
-    anotherChildToParent(childData);
-  }
-
+  //const [updateHistory, setUpdateHistory] = useState(false);
+  //console.log(historyUp);
   return (
     <div>
       <nav>
@@ -34,10 +30,10 @@ const SideMenuOptions = ({anotherChildToParent}) => {
         <section className="Option4" onClick={() => setActive("Tab4")} />
       </nav>
       <div>
-        {active === "Tab1" && <Tab1 childToParent={childToParent}/>}
-        {active === "Tab2" && <Tab2 childToParent={childToParent}/>}
-        {active === "Tab3" && <Tab3 childToParent={childToParent}/>}
-        {active === "Tab4" && <Tab4 childToParent={childToParent}/>}
+        {active === "Tab1" && <Tab1 history={history} updateHistory={updateHistory}/>}
+        {active === "Tab2" && <Tab2 history={history} updateHistory={updateHistory}/>}
+        {active === "Tab3" && <Tab3 history={history} updateHistory={updateHistory}/>}
+        {active === "Tab4" && <Tab4 history={history} updateHistory={updateHistory}/>}
       </div>
     </div>
   );

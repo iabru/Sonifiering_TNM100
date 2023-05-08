@@ -6,43 +6,52 @@ import Valt from './Valt.js'
 import Data from './OptionData.json';
 import './SideMenu.css';
 
-const options = JSON.parse(localStorage.getItem("tab4Option")) || [];
+const Tab4 = ({history, updateHistory}) =>{
 
-const Tab4 = ({childToParent}) =>{
-  const [option, setOption] = useState(options[0]);
-  const [option2, setOption2] = useState(options[1]);
-
-  // Update options when local storage updates
-  useEffect(() => {
-    const handleStorage = () => {
-        // Update options when local storage updates
-        var data = JSON.parse(localStorage.getItem("tab4Option"));
-        setOption(data[0]);
-        setOption2(data[1]);
-      }
-    
-      window.addEventListener('storage', handleStorage())
-      return () => window.removeEventListener('storage', handleStorage())
-    }, [option, option2])
+  let option = history.tab4Option;
 
   return (
     <div>
         <article className="Tab4">
           {Rubrik(Data[3].title[0], "Lorem ipsum 8")}
 
-          {option === 0 && Valt(Data[3].alt[0][0], Data[3].image[0][0])}
-          <div onClick={() => {childToParent(Data[3].alt[0][0]);setOption(0); options[0] = 0; localStorage.setItem("tab4Option", JSON.stringify(options));}}>{option !== 0 && Val(Data[3].alt[0][0], Data[3].image[0][0])}</div>
+          {option[0] === 0 && Valt(Data[3].alt[0][0], Data[3].image[0][0])}
+          <div onClick={() => { 
+            let temp = [...history.tab4Option];
+            temp[0] = 0;
+            updateHistory({...history, tab4Option: temp}); 
+            }}>
+            {option[0] !== 0 && Val(Data[3].alt[0][0], Data[3].image[0][0])}
+          </div>
 
-          {option === 1 && Valt(Data[3].alt[0][1], Data[3].image[0][1])}
-          <div onClick={() => {childToParent(Data[3].alt[0][1]);setOption(1); options[0] = 1; localStorage.setItem("tab4Option", JSON.stringify(options));}}>{option !== 1 && Val(Data[3].alt[0][1], Data[3].image[0][1])}</div>
+          {option[0] === 1 && Valt(Data[3].alt[0][1], Data[3].image[0][1])}
+          <div onClick={() => { 
+            let temp = [...history.tab4Option];
+            temp[0] = 1;
+            updateHistory({...history, tab4Option: temp}); 
+            }}>
+            {option[0] !== 1 && Val(Data[3].alt[0][1], Data[3].image[0][1])}
+          </div>
 
           {Rubrik(Data[3].title[1], "Lorem ipsum 9")}
 
-          {option2 === 0 && Valt(Data[3].alt[1][0], Data[3].image[1][0])}
-          <div onClick={() => {childToParent(Data[3].alt[1][0]);setOption2(0); options[1] = 0; localStorage.setItem("tab4Option", JSON.stringify(options));}}>{option2 !== 0 && Val(Data[3].alt[1][0], Data[3].image[1][0])}</div>
+          {option[1] === 0 && Valt(Data[3].alt[1][0], Data[3].image[1][0])}
+          <div onClick={() => { 
+            let temp = [...history.tab4Option];
+            temp[1] = 0;
+            updateHistory({...history, tab4Option: temp}); 
+            }}>
+            {option[1] !== 0 && Val(Data[3].alt[1][0], Data[3].image[1][0])}
+          </div>
 
-          {option2 === 1 && Valt(Data[3].alt[1][1], Data[3].image[1][1])}
-          <div onClick={() => {childToParent(Data[3].alt[1][1]);setOption2(1); options[1] = 1; localStorage.setItem("tab4Option", JSON.stringify(options));}}>{option2 !== 1 && Val(Data[3].alt[1][1], Data[3].image[1][1])}</div>
+          {option[1] === 1 && Valt(Data[3].alt[1][1], Data[3].image[1][1])}
+          <div onClick={() => { 
+            let temp = [...history.tab4Option];
+            temp[1] = 1;
+            updateHistory({...history, tab4Option: temp}); 
+            }}>
+            {option[1] !== 1 && Val(Data[3].alt[1][1], Data[3].image[1][1])}
+          </div>
         </article>
     </div>
   );
