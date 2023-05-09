@@ -1,13 +1,14 @@
 // How to start react: https://www.youtube.com/watch?v=Rs2BT6HrwMw
 import './Icon.css';
+import * as ALL from "../icons/icons.js"
 
 function Icon(name, link, removeIcon, color,key) {
   return (
     <div className="chosenOption" key={key}>
       <div className="Icon-cross" onClick={removeIcon}>
-        <img className="cross-image" src="https://drive.google.com/uc?export=view&id=13YujSwDcp0K8RCFAHvR0YGYNrpPB1Seb" alt="cross" />
+        <img draggable="false" className="cross-image" src={ALL["cross"]} alt="cross" />
       </div>
-      <img src={link} className="Icon-logo" id={color} alt={name} />
+      <img draggable="false" src={ALL[link]} className="Icon-logo" id={color} alt={name} />
     </div>
   );
 }

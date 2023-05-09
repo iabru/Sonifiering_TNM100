@@ -1,0 +1,27 @@
+export const fyrkant = require("./fyrkant.svg").default;
+export const triangel = require("./triangel.svg").default;
+export const logo = require("./logo.svg").default;
+export const placeholder = require("./question-mark.svg").default;
+export const sinus = require("./sinus.svg").default;
+export const sagtand = require("./sågtand.svg").default;
+export const frekvens = require("./frekvens.svg").default;
+export const ton = require("./ton.svg").default;
+export const cross = require("./Cross.svg").default;
+export const majmin = require("./majmin.svg").default;
+export const harmoni = require("./harmoni.svg").default;
+export const vitt = require("./vitt.svg").default;
+export const rosa = require("./rosa.svg").default;
+export const knaster = require("./knaster.svg").default;
+export const lowpass = require("./lowpass.svg").default;
+export const highpass = require("./highpass.svg").default;
+export const bandpass = require("./bandpass.svg").default;
+export const pulsbredd = require("./pulsbredd.svg").default;
+export const distortion = require("./distortion.svg").default;
+export const vagform = require("./vagform.svg").default;
+export const volym = require("./volym.svg").default;
+export const sustain = require("./sustain.svg").default;
+export const attack = require("./attack.svg").default;
+export const release = require("./release.svg").default;
+export const efterklang = require("./efterklang.svg").default;
+export const eko = require("./eko.svg").default;
+

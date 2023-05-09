@@ -1,5 +1,6 @@
 import React from "react";
 import "./Popup.css";
+import * as ALL from "../icons/icons.js"
 
 const Popup = ({ title, info, closePopup }) => {
 
@@ -12,7 +13,7 @@ const Popup = ({ title, info, closePopup }) => {
     <div className="popup-container">
      <div className="popup-body">
       <div className="cross" onClick={closePopup}>
-          <img src="https://drive.google.com/uc?export=view&id=13YujSwDcp0K8RCFAHvR0YGYNrpPB1Seb" alt="cross" />
+          <img draggable="false" src={ALL["cross"]} alt="cross" />
         </div>
       <h1>{title}</h1> 
       {/* <p>{info}</p> */}

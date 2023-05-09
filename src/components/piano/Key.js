@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Key.css';
 
 class Key extends React.Component {
@@ -35,6 +35,11 @@ class Key extends React.Component {
             }
         }
     }
+
+    // componentDidUpdate(prevProps) {
+    //     if(this.props.keyPressed !== prevProps.keyPressed){}
+    // }
+
     render() {
         
         let keyClassName="key";
