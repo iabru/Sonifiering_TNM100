@@ -8,13 +8,13 @@ const Graph = ({history,keysPressed, updateKeysPressed}) => {
     const [val, setVal] = useState(0);
     const [mouseDown, setMouseDown] = useState(false);
 const data = [
-    { name: 'Jan', value: 100, key: "f5" },
-    { name: 'Feb', value: 200, key: "h4" },
+    { name: 'Jan', value: 100, key: "f3" },
+    { name: 'Feb', value: 210, key: "c4" },
     { name: 'Mar', value: 300, key: "f4" },
-    { name: 'Apr', value: 410, key: "h3" },
-    { name: 'Mar', value: 350, key: "d4" },
-    { name: 'May', value: 500, key: "f3" },
-    { name: 'Jun', value: 600, key: "c3"},
+    { name: 'Apr', value: 410, key: "c5" },
+    { name: 'Mar', value: 350, key: "a4" },
+    { name: 'May', value: 500, key: "f5" },
+    { name: 'Jun', value: 600, key: "h5"},
 ];
 
 const CustomDot = (props) => {
