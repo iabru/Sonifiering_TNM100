@@ -8,11 +8,11 @@ import {NOTES} from './notes.js';
 class Piano extends React.Component {
     state = {keyPressed: 'No note played yet'}
     
+    
     handleChildVar = (keyNote, clicked) => {
         this.setState({
             keyPressed: keyNote
         });
-        console.log(keyNote);
 
         //Send the clicked keys to App.js
         let tempList = this.props.keysPressed ? [...this.props.keysPressed] : [];
@@ -22,6 +22,7 @@ class Piano extends React.Component {
         console.log(thenote);*/
     }
     render() {
+        
         const keys = _.map(NOTES,(note,index) => {
             let tempList = this.props.keysPressed ? [...this.props.keysPressed] : [];
             let boleanTemp = false;
@@ -32,6 +33,8 @@ class Piano extends React.Component {
                     note={note}
                     keyNote={this.handleChildVar}
                     keyPressed={boleanTemp}
+                    keysPressed={this.props.keysPressed}
+                    updateKeysPressed={this.props.updateKeysPressed}
                 />
             );
         });

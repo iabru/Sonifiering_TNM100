@@ -2,8 +2,8 @@ import React from "react";
 import {useState, useEffect} from "react";
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine} from 'recharts';
 import './GraphStyle.css'
-import SuperColliderConnection from '../SuperColliderConnection.js'
 import {NOTES} from '../piano/notes';
+import * as Tone from 'tone';
 
 const Graph = ({history,keysPressed, updateKeysPressed}) => {
     const [val, setVal] = useState(0);
@@ -15,7 +15,7 @@ const data = [
     { name: 'Apr', value: 410, key: "c5" },
     { name: 'Mar', value: 350, key: "a4" },
     { name: 'May', value: 500, key: "f5" },
-    { name: 'Jun', value: 600, key: "h5"},
+    { name: 'Jun', value: 600, key: "b5"},
 ];
 
 const CustomDot = (props) => {
@@ -45,6 +45,9 @@ const handleChartClick = (event) => {
         if(event && event.activePayload && event.activePayload.length > 0){
         //Extract the key from the clicked value
         const keyValue = event.activePayload[0].payload.key;
+        // const synth = new Tone.Synth().toDestination();
+
+        // synth.triggerAttackRelease(keyValue, "8n");
         //console.log(event.activePayload[0].payload.value);
         setVal(event.activePayload[0].payload.value);
         
@@ -91,7 +94,6 @@ const renderTooltip = (event, { active, payload }) => {
     //console.log(data[1]);
     return(  
         <div className="graph-wrapper">
-            <SuperColliderConnection/>
         <ResponsiveContainer>
             <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }} onClick={handleChartClick} onMouseMove={handleChartMove} onMouseDown={() => setMouseDown(true)} onMouseUp={() => setMouseDown(false)}>
                 <XAxis hide="true" dataKey="name"/>

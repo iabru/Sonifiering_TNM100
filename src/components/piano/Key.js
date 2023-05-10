@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import './Key.css';
 
+
 class Key extends React.Component {
     constructor(props) {
         super(props);
@@ -10,30 +11,20 @@ class Key extends React.Component {
             isClicked: false
         };
     }
+
+    //create a synth and connect it to the main output (your speakers)
     noteIsFlat = (note) => {
         return note.length>2;
     }
-    handleClick = (e) => {
-        this.props.keyNote(this.props.note);
-        this.setState({isClicked: !this.state.isClicked});
+    handleClick = (e, keyNote) => {
         
-        if(e.target.className === "key flat") {
-            if(this.state.color[1] === '#2EC4B6') {
-                this.setState({color: [this.state.color[0], '#089184']})
-            }
-            else if(this.state.color[1] === '#089184'){
-                this.setState({color: [this.state.color[0], '#2EC4B6']})
-            }
-        }
-        else {
-            if(this.state.color[0] === 'white') {
-                this.setState({color: ['#CBF3F0', this.state.color[1]]})
-                
-            }
-            else if(this.state.color[0] === '#CBF3F0'){
-                    this.setState({color: ['white', this.state.color[1]]})
-            }
-        }
+        this.props.keyNote(this.props.note);
+        const note =this.props.note;
+        this.setState({isClicked: !this.state.isClicked});
+
+        console.log(this.props.keysPressed);
+        this.props.updateKeysPressed([note]);
+        
     }
 
     // componentDidUpdate(prevProps) {
@@ -43,18 +34,19 @@ class Key extends React.Component {
     render() {
         
         let keyClassName="key";
-        
         const noteIsFlat = this.noteIsFlat(this.props.note);
+        const keyNote = this.props.note;
+        const keyPressed = this.props.keyPressed;
         if (noteIsFlat) {
             keyClassName += " flat";
         }
         let key;
         if(noteIsFlat)  {
             key = (
-            <div className={keyClassName} style={{backgroundColor: this.state.color[1]}} onClick={this.handleClick}></div>);
+            <div className={keyClassName} style={keyPressed ? { backgroundColor: '#089184'} : { backgroundColor: '#2EC4B6'}} onClick={e => this.handleClick(e, keyNote)}></div>);
         }
         else {
-            key = (<div className= {keyClassName} style = {{backgroundColor: this.state.color[0]}} onClick={this.handleClick}>
+            key = (<div className= {keyClassName} style = {keyPressed ? {backgroundColor: '#CBF3F0'} : {backgroundColor: "white"}} onClick={e => this.handleClick(e, keyNote)}>
                         <div className="key-text">
                             {/*this.props.note.toUpperCase()*/}
                         </div>

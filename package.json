@@ -8,7 +8,8 @@
     "@testing-library/user-event": "^13.5.0",
     "express": "^4.18.2",
     "node-osc": "^8.0.11",
-    "osc": "2.4.1",
+    "os-browserify": "^0.3.0",
+    "osc": "^2.4.1",
     "osc-js": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,7 +17,10 @@
     "recharts": "^2.5.0",
     "socket.io-client": "^4.6.1",
     "supercolliderjs": "^1.0.1",
-    "web-vitals": "^2.1.4"
+    "tone": "^14.7.77",
+    "url": "^0.11.0",
+    "web-vitals": "^2.1.4",
+    "wsocket": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
