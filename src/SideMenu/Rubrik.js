@@ -15,7 +15,7 @@ function Rubrik(name, information) {
     <header className="SideMenu-header">
       <p>{name}</p>
       <div onClick={togglePopup} className="SideMenu-question">
-        <img className="question-image" src={questionMark} alt="question-mark"/>
+        <img draggable="false" className="question-image" src={questionMark} alt="question-mark"/>
         {showPopup && <Popup title={name} info={information} closePopup={togglePopup} />}
       </div>
     </header>

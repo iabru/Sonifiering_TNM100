@@ -49,30 +49,33 @@ function History({history, updateHistory}) {
 
       {history.tab2Option.map((option,index) => {
         if(option !== 0) {
+          option -= 1; //* Fix because we have shifted all option one step to have a empty option
           return Icon(Data[1].alt[index][option],Data[1].image[index][option], ()=>removeIcon2(index), "Option2", `Tab2${option}${index}`)
         }
         else {
-          return IconNoCross(Data[1].alt[index][0], Data[1].image[index][0], "Option2", `Tab2${option}${index}`)
+          //return IconNoCross(Data[1].alt[index][0], Data[1].image[index][0], "Option2", `Tab2${option}${index}`)
         }
       })
       }
 
       {history.tab3Option.map((option,index) => {
         if(option !== 0) {
+          option -= 1; //* Fix because we have shifted all option one step to have a empty option
           return Icon(Data[2].alt[index][option],Data[2].image[index][option], ()=>removeIcon3(index), "Option3", `Tab3${option}${index}`)
         }
         else {
-          return IconNoCross(Data[2].alt[index][0], Data[2].image[index][0], "Option3", `Tab3${option}${index}`)
+          //return IconNoCross(Data[2].alt[index][0], Data[2].image[index][0], "Option3", `Tab3${option}${index}`)
         }
       })
       }
 
       {history.tab4Option.map((option,index) => {
         if(option !== 0) {
+          option -= 1; //* Fix because we have shifted all option one step to have a empty option
           return Icon(Data[3].alt[index][option],Data[3].image[index][option], ()=>removeIcon4(index), "Option4", `Tab4${option}${index}`)
         }
         else {
-          return IconNoCross(Data[3].alt[index][0], Data[3].image[index][0], "Option4", `Tab4${option}${index}`)
+          //return IconNoCross(Data[3].alt[index][0], Data[3].image[index][0], "Option4", `Tab4${option}${index}`)
         }
       })
       }

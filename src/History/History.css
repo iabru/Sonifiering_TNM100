@@ -22,4 +22,5 @@
   align-items: center;
   gap: calc(0.9vh * 1000 / 1080);
   overflow-x: auto;
+  user-select: none;
 }

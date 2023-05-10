@@ -2,6 +2,7 @@ import React from "react";
 import {useState, useEffect} from "react";
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine} from 'recharts';
 import './GraphStyle.css'
+import SuperColliderConnection from '../SuperColliderConnection.js'
 import {NOTES} from '../piano/notes';
 
 const Graph = ({history,keysPressed, updateKeysPressed}) => {
@@ -90,6 +91,7 @@ const renderTooltip = (event, { active, payload }) => {
     //console.log(data[1]);
     return(  
         <div className="graph-wrapper">
+            <SuperColliderConnection/>
         <ResponsiveContainer>
             <LineChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }} onClick={handleChartClick} onMouseMove={handleChartMove} onMouseDown={() => setMouseDown(true)} onMouseUp={() => setMouseDown(false)}>
                 <XAxis hide="true" dataKey="name"/>
@@ -97,7 +99,7 @@ const renderTooltip = (event, { active, payload }) => {
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                 <Tooltip content={renderTooltip} wrapperStyle={{ width: 100, backgroundColor: '#ccc', position: "absolute" }}/>
                 <ReferenceLine y={val} stroke={"green"}/>
-                <Line type="monotone" dataKey="value" stroke="#ff7300" yAxisId={0} dot={<CustomDot/>}/>
+                <Line type="monotone" isAnimationActive={false} dataKey="value" stroke="#ff7300" yAxisId={0} dot={<CustomDot/>}/>
             </LineChart>
         </ResponsiveContainer>
         </div>
