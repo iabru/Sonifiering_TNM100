@@ -1,8 +1,10 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Piano } from './components/piano/Piano.js'
 import Graph from './components/graph/Graph.js'
 import SideMenu from './SideMenu/SideMenu';
+
+
 
 function App() {
 
