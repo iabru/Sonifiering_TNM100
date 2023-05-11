@@ -19,7 +19,7 @@ const Synth = (props) => {
                 osc.type="square"
             }  
             osc.start();
-            osc.stop("+0.75");
+            osc.stop("+0.5");
         }
         else if(props.historyUpdate.tab1Option[1]===1)
         {
