@@ -50,9 +50,7 @@ class Key extends React.Component {
         }
         else {
             key = (<div className= {keyClassName} style = {{backgroundColor: this.state.color[0]}} onClick={this.handleClick}>
-                        <div className="key-text">
-                            {this.props.note.toUpperCase()}
-                        </div>
+                        
                     </div>);
         }
         return key;

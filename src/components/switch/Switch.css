@@ -1,0 +1,61 @@
+/*  COLORS
+  Orange:    #FF9F1C
+  Yellow:    #FFBF69
+  White:     #FFFFFF
+  Skyblue:   #CBF3F0
+  Seablue:   #2EC4B6 
+  Darkgray:  #595751
+  Gray:      #B1AEA5
+  Lightgray: #C9C9C9
+*/
+
+.switch{
+  margin: 0;
+  width: calc(60vh * 100 / 1080);
+  height: calc(30vh * 100 / 1080);
+}
+
+.react-switch-checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: calc(60vh * 100 / 1080);
+  height: calc(30vh * 100 / 1080);
+  background: #FFBF69;
+  border-radius: calc(60vh * 100 / 1080);
+  position: relative;
+  transition: background-color .2s;
+  margin: 0;
+}
+  
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: calc(2vh * 100 / 1080);
+  left: calc(2vh * 100 / 1080);
+  width: calc(26vh * 100 / 1080);
+  height: calc(26vh * 100 / 1080);
+  border-radius: calc(26vh * 100 / 1080);
+  transition: 0.2s;
+  background: #FF9F1C;
+  box-shadow: 0 0 calc(2vh * 100 / 1080) 0 rgba(10, 10, 10, 0.29);
+}
+  
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - calc(2vh * 100 / 1080));
+  transform: translateX(-100%);
+  background: #2EC4B6;
+}
+  
+.react-switch-label:active .react-switch-button {
+  width: calc(35vh * 100 / 1080);
+}

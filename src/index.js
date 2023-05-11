@@ -5,8 +5,8 @@ import SideMenuOptions from './SideMenu/SideMenuOptions';
 import SideMenu from './SideMenu/SideMenu';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import History from './History/History.js'
-import Play from './Play.js'
+import History from './History/History.js';
+import Play from './Play.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

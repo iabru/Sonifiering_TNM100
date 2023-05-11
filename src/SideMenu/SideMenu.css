@@ -98,6 +98,7 @@
 }
 
 .SideMenu-question {
+  cursor: pointer;
   display: flex;
   align-content: center;
   height: calc(5.1vh * 1000 / 1080);
@@ -136,6 +137,7 @@
 }
 
 .Icon-cross {
+  cursor: pointer;
   height: calc(2.8vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
   width: calc(2.8vh * 1000 / 1080);
   position: absolute;
@@ -144,6 +146,7 @@
 }
 
 .SideMenu-logo {
+  cursor: pointer;
   height: calc(5vh * 1000 / 1080); /* 7.8(org) - 1.4(padding) * 2 = 5 */
   width: calc(5vh * 1000 / 1080);
   padding: calc(1.4vh * 1000 / 1080);

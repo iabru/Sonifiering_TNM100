@@ -11,6 +11,7 @@
 /* Figma to CSS: https://www.youtube.com/watch?v=mh39YXytfC0 */
 
 .playButton {
+  cursor: pointer;
   position: absolute;
   right: calc(1.8vh * 1000 / 1080);
   top: calc(94.2vh * 1000 / 1080);
