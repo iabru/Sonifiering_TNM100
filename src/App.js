@@ -19,7 +19,7 @@ function App() {
   });
 
   // Till switches
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(true);
   const [value2, setValue2] = useState(false);
   
   return (
@@ -43,7 +43,9 @@ function App() {
         <p className="subhead-text">Data 2</p>
       </div>
       <div className="Content">
-        <Piano keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/>
+        { value ?
+          <Piano keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/> : <></>
+        }
         <Graph history={historyUpdate} keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/>
         <Synth keysPressed={keysPressed} historyUpdate={historyUpdate}></Synth>
       </div>

@@ -1,6 +1,8 @@
+import React,{useEffect} from 'react';
 import * as Tone from 'tone';
 const Synth = (props) => {
-    var synth = new Tone.Synth().toDestination();
+    useEffect(() => {
+        var synth = new Tone.Synth().toDestination();
     const keysPressed = props.keysPressed;
     console.log(props.historyUpdate);
     if(keysPressed[0]!==undefined) {
@@ -19,7 +21,7 @@ const Synth = (props) => {
                 osc.type="square"
             }  
             osc.start();
-            osc.stop("+0.5");
+            osc.stop("+0.75");
         }
         else if(props.historyUpdate.tab1Option[1]===1)
         {
@@ -90,6 +92,9 @@ const Synth = (props) => {
             noise.stop("+1");
         }
     }
+        
+    }, [props.keysPressed])
+    
     
       
     
