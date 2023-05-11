@@ -21,6 +21,7 @@ nav{
 }
 
 section{
+  cursor: pointer;
   border-top-left-radius: calc(1.2vh * 1000 / 1080);
   border-top-right-radius: calc(1.2vh * 1000 / 1080);
   height: calc(5vh * 1000 / 1080);

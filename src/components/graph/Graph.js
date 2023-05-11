@@ -100,6 +100,7 @@ const renderTooltip = (event, { active, payload }) => {
                 <YAxis orientation="right" />
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                 <Tooltip content={renderTooltip} wrapperStyle={{ width: 100, backgroundColor: '#ccc', position: "absolute" }}/>
+                <ReferenceLine y={val} stroke="#2EC4B6"></ReferenceLine>
                 <Line type="monotone" isAnimationActive={false} dataKey="value" stroke="#ff7300" yAxisId={0} dot={<CustomDot/>}/>
             </LineChart>
         </ResponsiveContainer>
