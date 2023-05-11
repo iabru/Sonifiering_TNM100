@@ -14,16 +14,16 @@ const Tab2 = ({history, updateHistory}) =>{
   return (
     <div>
         <article className="Tab2">
-          {Rubrik(Data[1].title[0], "Lorem ipsum 3")} 
+          {/*{Rubrik(Data[1].title[0], "Lorem ipsum 3")} 
 
-          {option[0] === 1 && Valt(Data[1].alt[0][0], Data[1].image[0][0])}
+           {option[0] === 1 && Valt(Data[1].alt[0][0], Data[1].image[0][0])}
           <div onClick={() => { 
             let temp = [...history.tab2Option];
             temp[0] = 1;
             updateHistory({...history, tab2Option: temp}); 
             }}>
             {option[0] !== 1 && Val(Data[1].alt[0][0], Data[1].image[0][0])}
-          </div>
+          </div> 
 
           {option[0] === 2 && Valt(Data[1].alt[0][1], Data[1].image[0][1])}
           <div onClick={() => { 
@@ -32,7 +32,7 @@ const Tab2 = ({history, updateHistory}) =>{
             updateHistory({...history, tab2Option: temp}); 
             }}>
             {option[0] !== 2 && Val(Data[1].alt[0][1], Data[1].image[0][1])}
-          </div>
+          </div>*/}
 
           {Rubrik(Data[1].title[1], "Lorem ipsum 4")}
 

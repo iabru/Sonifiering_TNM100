@@ -23,7 +23,7 @@ function App() {
       <div className="Content">
         <Piano keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/>
         <Graph history={historyUpdate} keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/>
-        <Synth keysPressed={keysPressed}></Synth>
+        <Synth keysPressed={keysPressed} historyUpdate={historyUpdate}></Synth>
       </div>
     </div>
     <SideMenu history={historyUpdate} updateHistory={setHistoryUpdate}/>
