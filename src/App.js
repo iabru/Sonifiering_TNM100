@@ -9,6 +9,7 @@ import Synth from './components/Synth.js';
 function App() {
   
   const [keysPressed, setKeysPressed] = useState(false);
+  const [val, setVal] = useState(0);
 
   console.log(keysPressed);
   const [historyUpdate, setHistoryUpdate] = useState({
@@ -46,8 +47,8 @@ function App() {
         { value ?
           <Piano keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/> : <></>
         }
-        <Graph history={historyUpdate} keysPressed={keysPressed} updateKeysPressed={setKeysPressed}/>
-        <Synth keysPressed={keysPressed} historyUpdate={historyUpdate}></Synth>
+        <Graph history={historyUpdate} keysPressed={keysPressed} updateKeysPressed={setKeysPressed} val={val} setVal={setVal}/>
+        <Synth keysPressed={keysPressed} historyUpdate={historyUpdate} val={val}/>
       </div>
     </div>
     <SideMenu history={historyUpdate} updateHistory={setHistoryUpdate}/>

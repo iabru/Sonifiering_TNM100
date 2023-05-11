@@ -6,7 +6,7 @@ const Synth = (props) => {
     const keysPressed = props.keysPressed;
     console.log(props.historyUpdate);
     if(keysPressed[0]!==undefined) {
-        if(props.historyUpdate.tab1Option[1]===0) {
+        if(props.historyUpdate.tab1Option[1]===0 ) {
             const osc = new Tone.Oscillator(keysPressed[0], "sine").toDestination()
             if(props.historyUpdate.tab1Option[0]===0) {
                 osc.type="sine";
@@ -31,65 +31,63 @@ const Synth = (props) => {
         if(props.historyUpdate.tab2Option[1]===1) {
             const noise = new Tone.Noise("white");
             if(props.historyUpdate.tab2Option[2]===1) {
-                const filter = new Tone.Filter(440, "lowpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "lowpass").toDestination();
                 noise.connect(filter).start();
-                
-
             }
             else if(props.historyUpdate.tab2Option[2]===2){
-                const filter = new Tone.Filter(440, "bandpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "bandpass").toDestination();
                 noise.connect(filter).start();
             }
             else if(props.historyUpdate.tab2Option[2]===3) {
-                const filter = new Tone.Filter(440, "highpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "highpass").toDestination();
                 noise.connect(filter).start();
             }
             else {
                 noise.toDestination().start();
             }
-            noise.stop("+1");
+            noise.stop("+0.75");
         }
         else if(props.historyUpdate.tab2Option[1]===2) {
             const noise = new Tone.Noise("pink");
             if(props.historyUpdate.tab2Option[2]===1) {
-                const filter = new Tone.Filter(440, "lowpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "lowpass").toDestination();
                 noise.connect(filter).start();
                 
 
             }
             else if(props.historyUpdate.tab2Option[2]===2){
-                const filter = new Tone.Filter(440, "bandpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "bandpass").toDestination();
                 noise.connect(filter).start();
             }
             else if(props.historyUpdate.tab2Option[2]===3) {
-                const filter = new Tone.Filter(440, "highpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "highpass").toDestination();
                 noise.connect(filter).start();
             }
             else {
                 noise.toDestination().start();
             }
-            noise.stop("+1");
+            noise.stop("+0.75");
         }
         else if(props.historyUpdate.tab2Option[1]===3) {
             const noise = new Tone.Noise("brown");
             if(props.historyUpdate.tab2Option[2]===1) {
-                const filter = new Tone.Filter(440, "lowpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "lowpass").toDestination();
                 noise.connect(filter).start();
                 
 
             }
             else if(props.historyUpdate.tab2Option[2]===2){
-                const filter = new Tone.Filter(440, "bandpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "bandpass").toDestination();
                 noise.connect(filter).start();
             }
             else if(props.historyUpdate.tab2Option[2]===3) {
-                const filter = new Tone.Filter(440, "highpass").toDestination();
+                const filter = new Tone.Filter(440+props.val*10, "highpass").toDestination();
                 noise.connect(filter).start();
             }
             else {
                 noise.toDestination().start();
             }
-            noise.stop("+1");
+            noise.stop("+0.75");
         }
     }
         

@@ -5,8 +5,8 @@ import './GraphStyle.css'
 import {NOTES} from '../piano/notes';
 import * as Tone from 'tone';
 
-const Graph = ({history,keysPressed, updateKeysPressed}) => {
-    const [val, setVal] = useState(0);
+const Graph = ({history,keysPressed, updateKeysPressed, val, setVal}) => {
+    
     const [mouseDown, setMouseDown] = useState(false);
 const data = [
     { name: 'Jan', value: 100, key: "f3" },
